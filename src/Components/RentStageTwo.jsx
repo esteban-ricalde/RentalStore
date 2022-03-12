@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import { Button } from "react-bootstrap";
 
-export default function RentPagetwo({firstName, lastName, age}) {
+export default function RentPagetwo(props) {
   // const { firstName, lastName, pickupDate, dropOffDate, age } = customerInfo;
 
   // place info in table or custom divs ??
@@ -15,9 +15,9 @@ export default function RentPagetwo({firstName, lastName, age}) {
     <>
       <div className="main-body">
         RentPagetwo
-        <div>FirstName: {firstName}</div>
-        <div>LastName: {lastName}</div>
-        <div>Age: {age}</div>
+        <div>FirstName: {props.firstName}</div>
+        <div>LastName: {props.lastName}</div>
+        <div>Age: {props.age}</div>
         <div>x days</div>
         <div>Cost</div>
 
